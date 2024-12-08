@@ -74,7 +74,7 @@ class Testing {
 			.contentType(ContentType.JSON)
 			.body("This is expected to be sent back as part of response body.")
 		.when()
-				.patch("https://postman-echo.com/patch")
+			.patch("https://postman-echo.com/patch")
 		.then()
 			.statusCode(200)
 			.body("data", equalTo("This is expected to be sent back as part of response body."));
